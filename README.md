@@ -84,7 +84,7 @@ LAM-UN/
 ## Equipo docente y créditos
 
 - **Profesor:** Víctor Hugo Grisales Palacio, director del Laboratorio de Automatización de Máquinas ([vhgrisalesp@unal.edu.co](mailto:vhgrisalesp@unal.edu.co)).
-- Laboratorista: Ing. Brayan Cufiño.
+- Laboratorista: Ing. Brayan Cufiño Triana.
 - **Monitor:** Ing. Nicolás Garzón Acevedo.
 - **Material base:**
   - *Guías para Control de Movimiento de Servomecanismos usando la Plataforma Industrial CompactLogix de Allen Bradley* (2015). Autores: Edgar Hernando Sepúlveda Oviedo, David Andrés Sáenz Ardila, Kevin Andrés Pulido y Víctor Hugo Grisales Palacio.
