@@ -74,7 +74,7 @@ LAM-UN/
 ## Normas básicas del laboratorio
 
 > [!WARNING]
-> Los servomotores del laboratorio son equipos industriales. Ningún eje se energiza sin la autorización del docente o del monitor, y sin haber completado la lista de chequeo de seguridad de la Parte 2.
+> Los servomotores del laboratorio son equipos industriales. Ningún eje se energiza sin la autorización del docente o del monitor, y sin haber completado la lista de chequeo de seguridad.
 
 - Uso obligatorio de elementos de protección personal, según la señalización del laboratorio.
 - Antes de descargar un programa, confirma el número de PAC y la IP rotulados en el tablero asignado a tu equipo.
