@@ -30,7 +30,7 @@ stateDiagram-v2
 
 Durante el paso 4, una acción continua calcula la salida de pegante:
 
-$$\texttt{Aplicar\_Pegante} = (y \ge 10\ \text{cm}) \wedge (y \le 50\ \text{cm})$$
+$$\texttt{Aplicar\textunderscore Pegante} = (y \ge 10\text{ cm}) \wedge (y \le 50\text{ cm})$$
 
 donde $y$ es la posición real de `Eje_Y` (comparaciones GEQ y LEQ sobre `Eje_Y.ActualPosition`).
 
@@ -63,7 +63,9 @@ Como ejercicio de transferencia, escribe también el secuenciador en **texto est
 
 Para que el cabezal viaje a la velocidad de la caja, la velocidad lineal de X debe ser igual a la de la banda. Con *Ratio Format* = *Real*, la relación es unidades del esclavo por unidad del maestro:
 
-$$R = \frac{s_{banda}}{s_X}$$
+$$
+R = \frac{s_{\text{banda}}}{s_X}
+$$
 
 donde $s$ es cuántos cm de recorrido lineal representa una unidad de posición de cada eje. Si la banda y X están ambos escalados en cm de recorrido lineal, **$R = 1$**.
 
@@ -74,7 +76,9 @@ donde $s$ es cuántos cm de recorrido lineal representa una unidad de posición 
 
 Con *Clutch* habilitado, X arranca desde el reposo y acelera con $a_c$ hasta la velocidad de la banda $v_b$. Mientras tanto, la caja ya va a $v_b$, así que el cabezal queda atrás una distancia:
 
-$$\Delta x = \frac{v_b^2}{2\,a_c}$$
+$$
+\Delta x = \frac{v_b^2}{2\,a_c}
+$$
 
 ¿Cómo lo compensas? Por ejemplo, ubicando la posición inicial de X adelantada en $\Delta x$, o retrasando el arranque de Y hasta que termine el embrague. Justifica tu elección.
 
@@ -82,7 +86,9 @@ $$\Delta x = \frac{v_b^2}{2\,a_c}$$
 
 Si Y tarda $t_Y$ en ir de 0 a 55 cm (con la [ecuación del perfil trapezoidal de la Parte 1](../01-formadora-de-cajas/02-perfiles-trapezoidales.md)), X recorre durante el seguimiento aproximadamente:
 
-$$x_{X} \approx v_b\,t_Y + \frac{v_b^2}{2\,a_c} + \frac{v_b^2}{2\,a_{stop}}$$
+$$
+x_X \approx v_b\,t_Y + \frac{v_b^2}{2\,a_c} + \frac{v_b^2}{2\,a_{\text{stop}}}
+$$
 
 (seguimiento, embrague y frenado). Debe caber dentro de los *soft limits* de X.
 
@@ -90,7 +96,9 @@ $$x_{X} \approx v_b\,t_Y + \frac{v_b^2}{2\,a_c} + \frac{v_b^2}{2\,a_{stop}}$$
 
 El ciclo de X e Y (pasos 4 a 6) debe terminar antes de que llegue la caja siguiente. Si las cajas van separadas una distancia $d$ sobre la banda:
 
-$$t_{ciclo} \le \frac{d}{v_b} \qquad \Rightarrow \qquad RP_{max} = \frac{60}{t_{ciclo}}\ \text{cajas/min}$$
+$$
+t_{\text{ciclo}} \le \frac{d}{v_b} \qquad \Rightarrow \qquad \text{RP}_{\text{max}} = \frac{60}{t_{\text{ciclo}}}\ \text{cajas/min}
+$$
 
 ¿Qué eje limita el ritmo? ¿Qué cambiarías para aumentarlo?
 
